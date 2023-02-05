@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Assignment08P02</title>
+
+    <style>
+
+        body{
+            margin: 0px;
+            }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        background: linear-gradient(to right,purple,goldenrod);
+        margin: 3px;
+       }
+ 
+     #firstimg{
+            border-radius: 10%;
+            }
+
+      a{
+        padding: 15px;
+        text-decoration: none;
+        color:whitesmoke;
+        font-size: 15px;
+        font-weight: bold;
+         }
+
+      
+       a:hover{
+        background-color: rgb(167, 157, 177);
+        border-radius: 15px;
+        color: rgb(61, 51, 51);
+         }
+
+
+     main{
+            display: flex;
+            margin: 2px;
+         }
+
+
+      #container01{
+        display: flex;
+       width: 40%;
+       flex-direction: column;
+       justify-content: center;
+        
+      }
+
+      #block01{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+       }
+      
+      p{
+        background-color: rgb(233, 183, 57);
+        margin: 2px;
+        height: 50px;
+        font-size: 18px;
+        text-align: center;
+        height: 100%;
+        }
+
+
+      #container02{
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+      #container03{
+        display: flex;
+        flex-direction: column;
+        }
+
+
+      .block03{
+            width: 100%;
+            background:linear-gradient(to right,purple,goldenrod);
+            text-align: center;
+            margin: 2px;
+          }
+
+
+        .block04{
+            display: flex;
+           height: 60px;
+            width: 100%;
+         }
+
+
+         .block05{
+            display: flex;
+             height: 60px;
+            width: 100%;
+            margin: 2px;
+         }
+
+         
+         .block06{
+            display: flex;
+             height: 60px;
+            width: 100%;
+            margin: 1px;
+        }
+            
+        .subblock{
+            display: flex;
+            height: 100%;
+            width: 30%;
+            background: linear-gradient(to right,rgb(207, 135, 207),rgb(255, 223, 142));
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+            }
+
+
+        .subblock01{
+             display: flex;
+            height: 100%;
+            width: 70%;
+            background-color: rgb(233, 183, 57);;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+          }
+
+
+        footer{
+            display: flex;
+             background: repeating-linear-gradient(to right,purple,goldenrod,purple,goldenrod) ;/*linear-gradient(to right,purple,goldenrod); */
+            flex-direction: column;
+            height: 80px;
+            color:rgb(14, 12, 12);
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+           }
+
+       
+        .footer{
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+          }
+        
+</style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Media</a>
+            <a href="#">Auction</a>
+            <a href="#">Player</a>
+            <a href="#">Store</a>
+        </nav>
+
+      <img id="firstimg" src="../assets/tkr.jpg" height="100%" width="18%"  >
+
+    </header>
+
+
+
+    <main>
+    <section id="container01">
+
+        <div><img id="secondimg" src="../assets/store.jpg"  width="100%"></div>
+
+        <div id="block01">
+        <p>50% Disount on every product</p>
+        <p>Win vouchers to Watch KKR Match in Stadium</p>
+        <p>Chance To Meet your Favourate Knight</p>
+        <p>Go and Grab the Offer</p>
+       </div>
+
+</section>
+
+
+  <section id="container03">
+
+    <div class="block02"><img src="../assets/kkrschedule.webp" width="100%" height="100%"></div>
+    <div class="block03"><h1>Match schedule</h1></div>
+
+    <div class="block04">
+      <div class="subblock"><span>Match 28</span></div>
+      <div class="subblock01"><span>KKR VS RCB</span></div>
+      
+   </div>
+
+    <div class="block05">
+      <div class="subblock"><span>Match 28</span></div>
+      <div class="subblock01"><span>KKR VS CSK</span></div>
+    </div>
+
+    <div class="block06">
+      <div class="subblock"><span>Match 28</span></div>
+      <div class="subblock01"><span>KKR VS MI</span></div>
+    </div>
+   
+</section>
+</main>
+
+
+<footer>
+  <span class="footer">Email Adress -: kkrofficialgmail.com</span>
+  <span class="footer">Mobile Number -: 764590123</span>
+</footer>
+
+
+
+    
+</body>
+</html>
