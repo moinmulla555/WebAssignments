@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Assignment07P02</title>
+    <style>
+
+        body{
+            margin: 0px;
+        }
+
+        header{
+            display: flex;
+            border: 1px solid;
+            height: 75px;
+            width: 100%;
+            background-color: rgb(87, 85, 85);
+          }
+
+        .block{
+            display: flex;
+            border: 0px solid;
+            height: 50px;
+            background-color: #aaa;
+            margin: 10px;
+            justify-content: center;
+            flex-grow: 1;
+            align-content: center;
+            }
+
+            #mainscreen{
+                display: flex;
+                height: 400px;
+                background-color: rgb(87, 85, 85);
+                margin: 2px;
+               }
+
+
+            #one{
+                display: flex;
+                 
+                flex-grow: 1;
+               }
+
+
+            #two{
+                display: inline-block;
+                height: 400px;
+                flex-grow: 3;
+                margin: 2px;
+                 }
+
+            #three{
+                width: 100%;
+                height: 200px;
+                margin: 3px; 
+            }
+
+            #four{
+                width: 100%;
+                height: 200px;
+                margin: 3px;
+            }
+
+            #fiveshow{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows:1f ;
+                height: 200px;
+                background-color: rgb(87, 85, 85);
+            }
+
+            .five{
+                  height: 160px;
+                  margin: 15px;
+               }
+            
+
+            #main{
+                display: flex;
+                border: 1px solid;
+                width: 100%;
+                height: 300px;
+                margin: 1px;
+              }
+
+            .contain01{
+                flex-grow: 1;
+              }
+
+            .contain02{
+                flex-grow: 1;
+                background-color:  rgb(136, 142, 148);
+                padding: 15px;
+                flex-direction: column;
+            }
+
+            
+          button{
+                width: 130px;
+                height: 25px;
+                border-radius: 8px;
+                border-color:rgb(87, 85, 85); 
+                font-weight: bold;
+                 }  
+
+             
+         #main02{
+                display: flex;
+                border: 0px solid;
+                height: 60px;
+                background-color: rgb(87, 85, 85);
+                align-items: center;
+                margin: 1px;
+               }
+
+            
+             .line01{
+                border: 3px solid;
+                flex-grow: 2;
+                height: 0px;
+              }
+             
+             
+             #name{
+                display: flex;
+                justify-content: center;
+                font-size: 24px;
+                font-weight: bold;
+                flex-grow: 1;
+                 }
+
+            .line02{
+                border: 3px solid;
+                flex-grow: 2;
+                height: 0px;
+            }
+
+             #fiveblock{
+              display: grid;
+              grid-template-columns:repeat(3,1fr);
+              grid-template-rows: 1fr;
+              margin: 0px;
+              background-color:  rgb(87, 85, 85);
+            }
+
+
+             .fiveblock01{
+                 height:120px;
+                 margin: 15px;
+               }
+
+
+             .fiveblock02{
+                  height:120px;
+                 margin: 15px;
+                }
+
+            
+             .fiveblock03{
+                 height:120px;
+                 margin: 15px;
+                }
+
+            
+             .fiveblock04{
+                height: 120px;
+                 margin: 15px;
+                }
+
+
+             .fiveblock05{
+                height:120px;
+                margin: 15px;
+              }
+
+        footer{
+            display: flex;
+            height: 150px;
+            width: 100%;
+            background-color: rgb(87, 85, 85);
+            margin: 2px;
+            align-items: center;
+             justify-content: center;
+              }
+
+       
+        #footer01{
+             height: 100%;
+            flex-grow: 3;
+           }
+         
+        #footer02{
+          height: 100%;
+            flex-grow: 1;
+              }
+
+
+        .parafoot{
+            display: flex;
+            flex-direction: column;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+         
+         #Endpara{
+            text-decoration: none;
+         }
+
+         #img{
+            border-radius: 20%;
+         }
+         
+           
+
+
+          
+
+           
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="block"><p>SHOWS</p></div>
+        <div class="block"><p>BOOKING</p></div>
+        <div class="block"><p>REVIEW</p></div>
+        <div class="block"><p>REFUND</p></div>
+        <div class="block"><p>SNACKS</p></div>
+
+    </header>
+
+    <section id="mainscreen">
+        <div id="one">
+            <img src="../assets/PVR-Screen.webp" width="100%" height="99%" >  
+        </div>
+
+        <div id="two">
+            <div id="three"><img src="../assets/PVR-cinemas-loot-offer.png" width="100%" height="88%"></div>
+            <div id="four"><img src="../assets/pvr offer.jpg" width="100%"  height="88%" ></div>
+        </div>
+
+    </section>
+
+    <section id="fiveshow">
+
+        <div class="five"><img  src="../assets/ved-222.webp" width="100%" height="100%"></div>
+        <div class="five"><img src="../assets/shehzada.jpg" width="100%" height="100%"></div>
+        <div class="five"><img src="../assets/Pathaan-3.webp" width="100%" height="100%"></div>
+        <div class="five"><img src="../assets/avatar.jpg" width="100%" height="100%"></div>
+        <div class="five"><img src="../assets/varisu.jpg" width="100%" height="100%"></div>
+
+    </section>
+
+    <main id="main">
+         <div class="contain01">
+            <img src="../assets/BMS_Id-.jpg" width="100% " height="100%">
+
+          </div>
+         <div class="contain02">
+            <h1 class="sub01">Bookings Opens Now :</h1>
+                    <p id="para">
+                        Watch your favourte Star on big screen with great offers on bookmyshow.
+                    
+                     </p>
+                     <button class="sub02">BOOK NOW</button>
+
+         </div>
+
+    </main>
+       
+
+
+        <main id="main02">
+            <div class="line01"></div>
+            <div id="name">Production-House</div>
+            <div class="line02"></div>
+        </main>
+
+        <section id="fiveblock">
+            <div class="fiveblock01"><img src="../assets/production-house.jpg" height="100%" width="100%"></div>
+            <div class="fiveblock02"> <img src="../assets/production-house1.jpg" height="100%" width="100%"></div>
+            <div class="fiveblock03"> <img src="../assets/production-house2.jpg" height="100%" width="100%"></div>
+            <div class="fiveblock04"> <img src="../assets/production-house3.jpg" height="100%" width="100%"></div>
+            <div class="fiveblock05"> <img src="../assets/production-house4.jpg" height="100%" width="100%"></div>
+
+
+        </section>
+
+
+
+
+        <footer>
+
+            <div id="footer01">
+                <p class="parafoot">Email : xyz123@gmail</p>
+                <p class="parafoot"> Contact : 91325467</p>
+                <p class="parafoot">Adress : Sector-35,New Delhi</p>
+                <p  id ="Endpara"class="parafoot">Thanks for visting</p>
+            </div>
+
+            <div id="footer02">
+                 <img id="img" src="../assets/PVR-Cinemas-Logo-PNG-HD.jpg" height="100%" width="100%">
+            </div>
+
+        </footer>
+
+
+</body>
+</html>
