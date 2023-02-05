@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Assignment09P01</title>
+    <style>
+        #container01{
+            display: flex;
+            height: 100px;
+            align-items: end;
+        }
+
+        .block01{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+        a{
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        #main01{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container02{
+            display: flex;
+            height: 250px;
+            width: 70%;
+             }
+
+        .block02{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 250px;
+            border: 2px dotted red;
+        }
+
+
+        h1{
+            margin: 0px;
+            font-size: 30px;
+        }
+
+
+        h3{
+            margin: 0px;
+        }
+
+        #main02{
+            display: grid;
+            height: 600px;
+            margin: 20px;
+            justify-items: center;
+         }
+
+        #container03{
+            display: grid;
+            gap: 3px;
+            width: 40%;
+            height: 600px;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+           }
+
+        .block03{
+          border: 2px solid red;
+        }
+
+
+        .cut{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            }
+
+
+         .cut03{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            }
+    
+     .cut01{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }  
+
+      .remove{
+        border: none;
+      }
+
+      #main03{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 300px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+       }
+    
+     .underone{
+        display: grid;
+        row-gap: 2px;
+        column-gap:2px ;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: repeat(4,1fr);
+        border: px solid;
+        width: 90%;
+        height: 80%;
+     }
+
+     .cutpara{
+        grid-row-start: 3;
+        grid-row-end: 5;
+     }
+
+     .cutpara01{
+         grid-row-start: 3;
+        grid-row-end: 5;
+     }
+
+     .para01{
+        border: 2px solid;
+        gap: 3px;
+        }
+
+     .undertwo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        gap: 3px;
+        height: 150px;
+        width: 40%;
+     }
+
+     .para02{
+        border: 3px dotted black;
+        display: grid;
+        border-radius:30px ;
+        justify-items: center;
+        width: 100%;
+        height:75px
+     }
+       
+
+    </style>
+
+
+
+</head>
+<body>
+    <section id="container01">
+        <div class="block01">
+            <nav class="navbarone">
+                <a class="navbar01" href="#">Home</a>
+                <a class="navbar01" href="#">About</a>
+            </nav>
+    
+        </div>
+        <div class="block01"><img src="../assets/WEBx86 Logo Rectangle.jpg" height="70px" width="100px"></div>
+
+        <div class="block01">
+            <nav class="navbarone">
+                <a class="navbar02" href="#">Contact us</a>
+                <a class="navbar02"  href="#">Career</a>
+            </nav>
+        </div>
+    </section>
+    <hr>
+    
+    <main id="main01">
+    <section id="container02">
+        <div class="block02"></div>
+        <div class="block02">
+            <h1>WEBx86</h1>
+            <h3>Infotech</h3>
+        </div>
+        <div class="block02"></div>
+     </section>
+    </main>
+
+
+
+     <main id="main02">
+    <section id="container03">
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03 cut remove"></div>
+       
+        <div class="block03 cut02"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03 cut03 remove"></div>
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03 remove"></div>
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03 remove"></div>
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03 remove"></div>
+        <div class="block03 "><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+
+        <div class="block03 cut01 remove"></div>
+        <div class="block03"><img src="../assets/WEBx86 Logo Circle.png" width="100%" height="100%"></div>
+
+</section>
+</main>
+
+
+
+
+<main id="main03">
+    <section class=" underone">
+        <div class="para01">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus 
+            aliquam natus praesentium incidunt
+             </p>
+        </div>
+
+        <div class="para01">
+            <img src="../assets/WEBx86 Logo Rectangle.jpg " width="100%" height="100%" >
+        </div>
+
+        <div class="para01">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus 
+            aliquam natus praesentium incidunt
+           </p>
+        </div>
+
+        <div class="para01">
+            <img src="../assets/WEBx86 Logo Rectangle.jpg " width="100%" height="100%" >
+        </div>
+
+        <div class="para01 cutpara">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus 
+            aliquam natus praesentium incidunt
+           </p>
+        </div>
+        
+        <div class="para01 cutpara01">
+            <img src="../assets/WEBx86 Logo Rectangle.jpg " width="100%" height="100%" >
+        </div>
+        
+    </section>
+
+
+    
+
+    <section class="undertwo">
+        <div class="para02">
+             <img  src="../assets/WEBx86 Logo Circle.png " width="40%" height="75px" >
+        </div>
+        <div class="para02">
+             <img src="../assets/WEBx86 Logo Circle.png " width="40%" height="75px" >
+        </div>
+    </section>
+
+
+</main>
+    
+    
+</body>
+</html>
