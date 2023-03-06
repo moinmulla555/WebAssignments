@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+
+  <style>
+    #container {
+      padding: 30px;
+    }
+
+    h1 {
+      color: antiquewhite;
+      background-color: black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .row {
+      padding: 10px;
+    }
+
+    .button {
+      width: 150px;
+    }
+
+    #form {
+      border-radius: 16px;
+      border: 1px solid;
+
+      background-color: rgb(184, 211, 130);
+
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <form name="student" id="form">
+    <div class="row" id="container">
+      <h1>Registration form</h1>
+      <div class="row">
+
+        <div class="row">
+          <div class="col-md-6">
+            <label for="Fname" class="form-label" style="font-weight: bold;">Full Name</label>
+            <input type="text" class="form-control" id="Fname" placeholder=" Name" name="name">
+            <div id="nameerror" class="form-text error"></div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Email address</label>
+            <input type="text" class="form-control" name="email" placeholder="Email">
+            <div id="emailerror" class="form-text error"></div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6">
+            <label for="exampleFormControlInput1" style="font-weight: bold;" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" name="mobile" placeholder="Mobile">
+            <div id="mobileerror" class="form-text error"></div>
+          </div>
+          <div class="col-md-6">
+            <label style="font-weight: bold;" class="form-label">Select State</label>
+            <select class="form-select" name="state" aria-label="Default select example">
+              <option value="select"> Select Your State</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujrat">Gujrat</option>
+            </select>
+            <div id="stateerror" class="form-text error"></div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <label style="font-weight: bold;" class="form-label"> Select Your Gender</label>
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="exampleRadios1"> Male</label>
+              </div>
+
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="gender" id="fmale" value="fmale">
+                <label class="form-check-label" for="exampleRadios1"> Female</label>
+              </div>
+
+              <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                <label class="form-check-label" for="exampleRadios1">Other</label>
+              </div>
+            </div>
+            <div id="gendererror" class="form-text error"></div>
+          </div>
+
+          <div class="col-md-6">
+            <label style="font-weight: bold;" class="form-label"> Languages</label>
+
+            <div class="row">
+              <div class="col-md-3">
+                <input class="form-check-input" type="checkbox" value="java" name="languages" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Java</label>
+              </div>
+
+              <div class="col-md-3">
+                <input class="form-check-input" type="checkbox" value="pyton" name="languages" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"> Python</label>
+              </div>
+
+              <div class="col-md-3">
+                <input class="form-check-input" type="checkbox" value="charp" name="languages" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"> Csharp</label>
+              </div>
+
+              <div class="col-md-3">
+                <input class="form-check-input" type="checkbox" value="c++" name="languages" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"> C++</label>
+              </div>
+              <div id="langError" class="form-text error"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row button">
+          <button class="btn btn-dark" onclick="formvalidation()">Submit</button>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </form>
+
+
+  <script>
+
+    var form = document.getElementById("form");
+    function handleForm(event) { event.preventDefault(); }
+     form.addEventListener('submit', handleForm);
+
+    function Errorshow(ElementId, ShowTextError) {
+ 
+
+      var x = document.getElementById(ElementId);
+      x.style.color = "red";
+      x.innerHTML = ShowTextError;
+    }
+
+
+
+
+
+    function formvalidation() {
+      var name = document.student.name.value;
+      var email = document.student.email.value;
+      var Mobile = document.student.mobile.value;
+      var state = document.student.state.value;
+      var gender = document.student.gender.value;
+       console.log("Your name:",name);
+
+
+      var chooselang = [];
+
+
+      var selectLanguages = document.getElementsByName("languages");
+
+
+
+      let count = 0;
+      for (let i = 0; i < selectLanguages.length; i++) {
+        if (selectLanguages[i].checked) {
+          chooselang.push(selectLanguages[i].value);
+          count++;
+        }
+      }
+
+      console.log("your count",count);
+
+
+      var nameerror = emailerror = mobileerror = stateerror = gendererror = langError = true;
+
+
+      //name error
+      if (name == "") {
+        Errorshow("nameerror", "Please Enter Your Name");
+      }
+      else {
+
+        var pattern = /^[a-zA-Z\s]+$/;
+        if (pattern.test(name) === false) {
+          Errorshow("nameerror", "Please Enter valid Name")
+        } else {
+          Errorshow("namerror", "")
+          nameerror == false;
+        }
+      }
+
+
+      //email error
+      if (email == "") {
+        Errorshow("emailerror", "Please Enter Your Email.");
+      }
+      else {
+        let pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+        if (pattern.test(email) === false) {
+          Errorshow("emailerror", "Please Enter Valid Email");
+        }
+        else {
+          Errorshow("emailerror", "");
+          emailError = false;
+        }
+      }
+
+      //mobile error
+
+      if (Mobile == "") {
+        Errorshow("mobileerror", "Please enter Your Mobile Number");
+      }
+      else {
+
+        let pattern = /^[1-9]\d{9}$/;
+
+        if (pattern.test(Mobile) === false) {
+
+          Errorshow("mobileerror", "Please enter valid Mobile Number")
+
+        }
+
+        else {
+          Errorshow("mobileerror", "");
+          mobileerror = false;
+        }
+      }
+
+      //state error
+
+      if (state == "select") {
+        Errorshow("stateerror", "Please Select Your State");
+      }
+
+      else {
+        Errorshow("stateerror", "")
+        stateerror = false;
+      }
+
+      //gender error
+
+      if (gender == "") {
+
+        Errorshow("gendererror", "Please Select Your Gender");
+      }
+      else {
+        Errorshow("gendererror", "");
+        gendererror = false;
+      }
+
+
+      //language error
+
+      if (count === 0) {
+        Errorshow("langError", "Please Select Languages")
+      }
+      else {
+        Errorshow("langError", "");
+        langError = false;
+      }
+
+      if ((nameerror && emailerror && mobileerror && stateerror && gendererror && langError) === false) {
+
+        var submitteddata = "Your Submitted Data : \n" + `Name:${name}\n  Email:${email}\n  Mobile Number: ${Mobile}\n  State:${state}\n  Gender:${gender}\n`;
+
+        if (count > 0) {
+          submitteddata += `Languages:${chooselang.join(", ")}`;
+        }
+
+        console.log(submitteddata);
+        window.alert(submitteddata);
+
+
+
+      }
+
+
+
+
+
+
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
